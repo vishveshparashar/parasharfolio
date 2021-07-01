@@ -447,7 +447,7 @@ a:hover {
 /*parlex*/
 .bg-parlex {
   padding-top: 0px;
-  background-image: url("../images/figure-to-ground_orig.jpg");
+  background-image: url("../images/28\ PM.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1183,17 +1183,62 @@ footer {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(201, 28, 28, 0);
 }
 
 .project-cards {
   margin: 10%;
   width: 80%;
   padding: auto;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 0.849);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.568);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+
+
+
+
+
+
+
+
+
+
+      /* whatsapp for desktop view */
+      .whatsapp_float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+
+    .whatsapp-icon {
+        margin-top: 16px;
+    }
+
+    /* for mobile */
+    @media screen and (max-width: 767px) {
+        .whatsapp-icon {
+            margin-top: 10px;
+        }
+
+        .whatsapp_float {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+            right: 10px;
+            font-size: 22px;
+        }
+    }
