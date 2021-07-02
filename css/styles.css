@@ -466,7 +466,7 @@ a:hover {
   .parlex-back > div {
     padding: 40px;
   }
-  .banner-container img{
+  .banner-container img {
     height: 80vh;
   }
 }
@@ -1187,18 +1187,54 @@ footer {
 }
 
 .project-cards {
-  margin: 10%;
-  width: 80%;
-  padding: auto;
-  background: rgba(255, 255, 255, 0.849);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.568);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
+  margin: 5%;
+  background-color: white;
+  color: black !important;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: 600;
 }
 
+@media screen and (min-width:600px) {
+  .project-cards{
+    height: 450px;
+  }
+}
+.project-cards:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca,
+    0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.project-cards-text {
+  padding: 10%;
+}
+/* whatsapp for desktop view */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
 
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
 
 
 
@@ -1256,6 +1292,11 @@ footer {
 
 
 
-
-
-    
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
